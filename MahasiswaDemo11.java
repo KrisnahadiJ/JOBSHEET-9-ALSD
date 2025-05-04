@@ -39,6 +39,11 @@ public class MahasiswaDemo11 {
                         int nilai = scan.nextInt();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
+                
+                        // Menambah konversi nilai ke biner
+                        StackKonversi11 konversi = new StackKonversi11();
+                        String biner = konversi.konversiDesimalKeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas: " + biner);
                     }
                     break;
 
